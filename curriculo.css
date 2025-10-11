@@ -1,0 +1,65 @@
+body {
+  background: #eee;              /* cinza claro atrás, só pra contraste */
+  display: flex;
+  justify-content: center;       /* centraliza horizontalmente */
+}
+
+.container {
+  width: 210mm;                  /* largura do A4 */
+  min-height: 520mm;             /* altura mínima do A4 */
+  background: white;
+  /* se tirar a header sobe */
+  /* padding: 20mm; */                 /* margens internas */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* sombra pra destacar */
+  position: relative;
+}
+
+.conteudo{
+  display: flex;
+  align-items: flex-start;
+}
+
+img{
+    clip-path: circle(50%);
+    width: 150px;
+    position: absolute;/* permite sobrepor  */
+    top: 3%;
+    left: 5%;
+
+}
+
+.header{/* quando é classe se usa o . */
+    background-color: #323b4c;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.header h1{
+    padding-left: 430px;
+    margin: 0;
+}
+
+.header h4{
+  padding-left: 430px;
+  margin-top: 5px;
+  
+}
+
+.p.parte{
+  background-color: #e4e4e4;
+  width: 35%;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.seg.parte{
+  background-color: red;
+  width: 65%;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+.info-contato, .info-habilidades, .info-linguas{
+  padding-bottom: 80px;
+}
